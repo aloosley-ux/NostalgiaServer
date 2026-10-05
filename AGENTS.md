@@ -10,6 +10,7 @@ The global Git, commit, PR, C++ header, exception, and documentation policies ap
 
 ## Deferred Callback Lifetime Safety
 
+- Lua/engine callbacks may mutate creature collections synchronously. Traverse an immutable weak snapshot, revalidate each owner after callbacks, and keep erase predicates callback-free. Validate spawning/removal in the same creature-check bucket.
 - Assume scheduled, deferred, timer, and worker callbacks can outlive their source object or state.
 - Never capture raw `this`, references, iterators, or mutable-container pointers across that boundary. Use immutable values plus `std::weak_ptr` or re-resolvable identity validated with the original identity, generation, epoch, or session token.
 - Removal, replacement, reload, or reinterpretation must cancel pending work or advance a checked generation. Callback-owning types are non-movable unless moving cancels or safely rebinds every event.

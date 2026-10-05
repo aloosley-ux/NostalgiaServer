@@ -7720,10 +7720,16 @@ void Game::checkCreatures() {
 	metrics::method_latency measure(__METRICS_METHOD_NAME__);
 	static size_t index = 0;
 
-	std::erase_if(checkCreatureLists[index], [](const std::weak_ptr<Creature> &weak) {
+	// Lua think callbacks can spawn creatures, appending to this same bucket.
+	// Run callbacks over an immutable weak snapshot; keep cleanup free of callbacks.
+	const auto snapshot = checkCreatureLists[index];
+	for (const auto &weak : snapshot) {
 		if (const auto creature = weak.lock()) {
 			if (creature->creatureCheck && creature->isAlive()) {
 				creature->onThink(EVENT_CREATURE_THINK_INTERVAL);
+				if (creature->isRemoved() || !creature->creatureCheck || !creature->isAlive()) {
+					continue;
+				}
 				if (auto* monster = creature->getMonsterRaw()) {
 					// The async completion queues this post-think only after target and
 					// follow decisions for the coalesced tick have finished.
@@ -7732,12 +7738,16 @@ void Game::checkCreatures() {
 					creature->onAttacking(EVENT_CREATURE_THINK_INTERVAL);
 					creature->executeConditions(EVENT_CREATURE_THINK_INTERVAL);
 				}
+			}
+		}
+	}
+	std::erase_if(checkCreatureLists[index], [](const std::weak_ptr<Creature> &weak) {
+		if (const auto creature = weak.lock()) {
+			if (!creature->isRemoved() && creature->creatureCheck && creature->isAlive()) {
 				return false;
 			}
-
 			creature->inCheckCreaturesVector = false;
 		}
-
 		return true;
 	});
 
