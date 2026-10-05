@@ -124,3 +124,4 @@ if os.getenv('NOSTALGIA_TEST') == '1' then
     event:register()
 end
 if os.getenv('NOSTALGIA_LIVE_TEST') == '1' then dofile('tests/nostalgia/live.lua') end
+if os.getenv('NOSTALGIA_QA_TEST') == '1' then dofile('tests/nostalgia/qa.lua') end

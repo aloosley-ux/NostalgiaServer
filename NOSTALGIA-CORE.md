@@ -8,9 +8,13 @@ The separate **Test** characters are disposable automated fixtures.
 Spawn: Meridian Shelter, (1008,1010,7). Say `hi` then `trade` to Quartermaster.
 Starter backpacks contain the other two class families, supplies and dressings.
 Equip weapons in a hand, rigs in the ammo slot. Use dressings for healing.
-The Nostalgia Character panel exposes the authoritative progression and resource;
-its button or `!resource` spends that resource. `!nostalgia` prints the snapshot.
-Leave the shelter eastward to hunt eight species across the original compact map.
+The existing Skills window (Alt+S) displays authoritative Nostalgia Level/XP,
+class, current weapon family/skill, Defence, Recovery, Medic mastery when
+applicable, resource and supply count. Its button or `!resource` spends the
+existing generic resource. `!nostalgia` remains a diagnostic snapshot.
+Use `!qa help` for the four Testers' travel destinations, or `!qa pos` for
+coordinates. The expanded Meridian QA district has separate species rooms,
+movement, ranged, pack, healing/death, door/container and two-floor test areas.
 PvE deaths return you to shelter with progression and equipment preserved.
 
 ## Implementation
@@ -33,6 +37,13 @@ families, supplies, healing, Defence, resources, fractional kill XP with zero
 stamina, loot, NPC purchase, container opening, client HUD and two deaths per
 class. It also restarts Canary to verify 88 exact played-state persistence checks.
 Tests require the existing ignored client `.local/test-login.lua` credentials.
+`python tools/test-qa.py` additionally runs all four actual Tester characters,
+checks the integrated Skills UI and modern modules, docking/collapse/fallback,
+map ground/LOS, travel, both stair pairs, TCP movement/door use and world chest
+opening. It compares inventory/progression and restores positions on logout.
+Stop manual server/client instances before running tests.
+See `C:\AI\Nostalgia\docs\35_CLIENT_INTEGRATION_AND_MANUAL_QA_SANDBOX.md`
+for the asset diagnosis, RME launcher and human testing checklist.
 
 ## Remaining scope
 
@@ -41,5 +52,8 @@ named abilities, revives/cleanses, authored enemy specials and multiplayer group
 balancing remain to implement. Extra ring/bracelet slots are not exposed yet.
 Shop equipment prices and loot drop chances are sandbox values. Temporary
 graphics stay in ignored standard client paths; no proprietary graphics are
-committed. Client modules ran successfully, but visual QA was unavailable while
-the desktop was locked. Unused upstream content still loads alongside the sandbox.
+committed. Native client screenshots now verify coherent 15.25 ground and the
+four Testers' Skills panels. Some weapon/supply/creature graphics remain explicit
+temporary proxies; the local sound pack is absent. Native RME asset loading was
+checked, but interactive editor open/edit/save round-trip remains a human check.
+Unused upstream content still loads alongside the sandbox.
