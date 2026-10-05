@@ -380,6 +380,11 @@ tasks.json
 .idea/
 
 ## CUSTOM
+.local/
+*.local.lua
+*.local.json
+*.local.sql
+/data-canary/world/phase-a*
 # Files
 config.lua
 config_canary.lua

@@ -8,10 +8,16 @@ import os
 import subprocess
 import shutil
 import time
+import sys
 
 root=Path(__file__).resolve().parents[1]
 client=root.parent/'NostalgiaClient'
 env=dict(os.environ,NOSTALGIA_QA_TEST='1')
+env.pop('NOSTALGIA_HD_PROOF',None)
+env.pop('NOSTALGIA_HD_QA',None)
+if '--hd' in sys.argv or '--hd-fallback' in sys.argv:
+    env['NOSTALGIA_HD_QA']='1'
+    if '--hd' in sys.argv: env['NOSTALGIA_HD_PROOF']='1'
 env.pop('NOSTALGIA_LIVE_TEST',None)
 env.pop('NOSTALGIA_TEST',None)
 profile=client/'.local/qa-profile'
@@ -32,7 +38,7 @@ with server_log.open('w',encoding='utf-8') as sout,client_log.open('w',encoding=
             if 'server online!' in text: break
         else: raise RuntimeError('QA server startup timeout')
         process=subprocess.Popen([str(client/'otclient.exe'),f'--user-dir={profile}'],cwd=client,env=env,stdout=cout,stderr=subprocess.STDOUT)
-        deadline=time.monotonic()+65
+        deadline=time.monotonic()+125
         while time.monotonic()<deadline:
             time.sleep(.2)
             sl=server_log.read_text(errors='replace')

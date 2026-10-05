@@ -21,6 +21,16 @@ startup.onStartup = function()
     check(not Position(1034,1010,7):isSightClear(Position(1040,1010,7)),'ranged divider blocks sight')
     check(Position(1030,1011,7):isSightClear(Position(1030,1006,7)),'clear ranged lane')
     check(Tile(Position(1059,1020,7)):getItemById(1629),'native closed door')
+    for n=0,15 do
+        check(Tile(Position(979+n*2,1062,7)):getGround():getId()==60000+n,'individual custom floor '..n)
+        local x0,y0=979+(n%4)*11,1066+math.floor(n/4)*11
+        for y=y0,y0+7 do for x=x0,x0+7 do
+            local t=Tile(Position(x,y,7))
+            check(t:getGround():getId()==60000+n,'8x8 custom floor '..n)
+            check(t:hasFlag(TILESTATE_PROTECTIONZONE),'gallery protected')
+            check(not t:hasFlag(TILESTATE_BLOCKSOLID),'gallery walkable')
+        end end
+    end
     logger.info('NOSTALGIA QA MAP PASS: ' .. checks .. ' map/destination checks.')
     return true
 end
@@ -64,6 +74,20 @@ request.onExtendedOpcode=function(player,code,buffer)
         check(player:getPosition().z==7,'native cellar ascent')
         player:teleportTo(Position(1008,1010,7),true)
         player:sendExtendedOpcode(123,'floors-pass')
+    elseif buffer:match('^custom%-floor:%d+$') then
+        local n=tonumber(buffer:match('(%d+)$'))-1
+        if n<0 or n>15 then return true end
+        player:teleportTo(Position(982+(n%4)*11,1069+math.floor(n/4)*11,7),true)
+        check(Tile(player:getPosition()):getGround():getId()==60000+n,'live custom floor arrival')
+        player:sendExtendedOpcode(123,buffer)
+    elseif buffer=='custom-floors-finish' then
+        player:sendExtendedOpcode(123,'custom-floors-pass')
+    elseif buffer=='hd-floor' then
+        player:teleportTo(Position(1008,1112,7),true)
+        check(Tile(player:getPosition()):getGround():getId()==60016,'HD floor uses ordinary native ground ID')
+        player:sendExtendedOpcode(123,'hd-floor')
+    elseif buffer=='continue-doors' then
+        player:sendExtendedOpcode(123,'continue-doors')
     elseif buffer=='finish' then
         local before,after=states[player:getId()].before,capture(player)
         check(after.level==before.level and after.xp==before.xp,'Tester Level/XP preserved')

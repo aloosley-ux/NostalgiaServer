@@ -68,7 +68,9 @@ for _, item in pairs(D.items) do
         action:id(item.server_id)
         action.onUse = function(player, usedItem, fromPosition, target)
             if not N.class(player) then return false end
-            local recipient = target and target:isPlayer() and target or player
+            -- Use-on-self can resolve to an item/ground target, which has no
+            -- isPlayer method. Only creature targets can select a recipient.
+            local recipient = target and target.isPlayer and target:isPlayer() and target or player
             if N.heal(player, recipient) then usedItem:remove(1); return true end
             return false
         end

@@ -1,5 +1,25 @@
 # Canary
 
+## Nostalgia development checkpoint
+
+Nostalgia's working branch is `nostalgia/phase-a`, using Canary with the pinned
+15.25 appearance package and the original Meridian QA map. The map includes
+16 custom floor patches plus an opt-in client HD proof: `!qa floors` / `!qa hd`.
+Gameplay coordinates and native item placement remain unchanged.
+
+Before using this map on a fresh setup, prepare matching local 15.25 assets and
+run the main Nostalgia repo's importer to generate the custom appearances for
+both server and client. The combined `data/items/appearances.dat` is a generated
+local package; its changed contents are not published with this checkpoint.
+Original artwork, ID registry, importer and RME adapter live in the main repo.
+Local database credentials/configuration and compiled executables stay local.
+
+See [floor pipeline](https://github.com/aloosley-ux/Nostalgia/blob/main/docs/36_CUSTOM_FLOOR_PIPELINE.md)
+and [HD feasibility and validation](https://github.com/aloosley-ux/Nostalgia/blob/main/docs/37_HD_ASSET_FEASIBILITY.md).
+`python tools/test-qa.py --hd` and `--hd-fallback` run the isolated four-Tester
+checks with an already configured database/client. Custom-floor interactive
+RME placement/save/reopen remains the outstanding editor check.
+
 [![Discord](https://img.shields.io/discord/528117503952551936.svg?style=flat-square&logo=discord)](https://discord.gg/gvTj5sh9Mp)
 [![CI](https://github.com/opentibiabr/canary/actions/workflows/ci.yml/badge.svg)](https://github.com/opentibiabr/canary/actions/workflows/ci.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=opentibiabr_canary&metric=alert_status)](https://sonarcloud.io/dashboard?id=opentibiabr_canary)
