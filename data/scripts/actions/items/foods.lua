@@ -158,7 +158,8 @@ function food.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 for index, value in pairs(foods) do
-	food:id(index)
+	local row = Nostalgia and Nostalgia.item({getId=function() return index end})
+	if not row then food:id(index) end
 end
 
 food:register()

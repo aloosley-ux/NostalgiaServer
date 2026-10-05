@@ -1,6 +1,8 @@
 local callback = EventCallback("TaskboardPlayerOnKill")
 
 function callback.playerOnKill(player, monster)
+	-- Nostalgia content has its own identities; Tibia race/task tables do not apply.
+	if Nostalgia and player and Nostalgia.class(player) then return end
 	local taskboard = rawget(_G, "Taskboard")
 	if not taskboard or not taskboard.isEnabled() or not player or not monster then
 		return

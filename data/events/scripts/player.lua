@@ -237,6 +237,17 @@ end
 local exhaust = {}
 
 function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, toCylinder)
+	if Nostalgia and Nostalgia.class(self) and toPosition.x == CONTAINER_POSITION and toPosition.y <= CONST_SLOT_LAST then
+		local row = Nostalgia.item(item)
+		if row and (row.category == 'weapon' or row.equipment_slot) then
+			if row.class_name and row.class_name ~= Nostalgia.class(self) then
+				self:sendCancelMessage('This equipment belongs to ' .. row.class_name .. '.'); return false
+			end
+			if self:getLevel() < row.required_level then
+				self:sendCancelMessage('Requires Level ' .. row.required_level .. '.'); return false
+			end
+		end
+	end
 	if item:getActionId() == IMMOVABLE_ACTION_ID then
 		self:sendCancelMessage(RETURNVALUE_NOTPOSSIBLE)
 		return false
@@ -530,6 +541,9 @@ function Player:onTradeRequest(target, item)
 end
 
 function Player:onGainExperience(target, exp, rawExp)
+	if Nostalgia and Nostalgia.class(self) then
+		return Nostalgia.gainExperience(self, target, rawExp)
+	end
 	if not target or target:isPlayer() then
 		return exp
 	end
@@ -605,6 +619,7 @@ function Player:onLoseExperience(exp)
 end
 
 function Player:onGainSkillTries(skill, tries)
+	if Nostalgia and Nostalgia.class(self) then return 0 end
 	-- Dawnport skills limit
 	if IsRunningGlobalDatapack() and isSkillGrowthLimited(self, skill) then
 		return 0

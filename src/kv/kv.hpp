@@ -74,6 +74,8 @@ private:
 
 class KVStore : public KV {
 public:
+	// Persist a character namespace inside the caller's existing DB transaction.
+	bool savePrefix(const std::string &prefix);
 	static constexpr size_t MAX_SIZE = 1000000;
 	static KVStore &getInstance();
 

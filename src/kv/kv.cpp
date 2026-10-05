@@ -38,6 +38,24 @@ void KVStore::set(const std::string &key, const ValueWrapper &value) {
 	processEvictions();
 }
 
+bool KVStore::savePrefix(const std::string &prefix) {
+	std::vector<std::pair<std::string, ValueWrapper>> snapshot;
+	{
+		std::scoped_lock lock(mutex_);
+		for (const auto &[key, entry] : store_) {
+			if (key.starts_with(prefix)) {
+				snapshot.emplace_back(key, entry.first);
+			}
+		}
+	}
+	for (const auto &[key, value] : snapshot) {
+		if (!save(key, value)) {
+			return false;
+		}
+	}
+	return true;
+}
+
 void KVStore::setLocked(const std::string &key, const ValueWrapper &value) {
 	auto it = store_.find(key);
 	if (it != store_.end()) {

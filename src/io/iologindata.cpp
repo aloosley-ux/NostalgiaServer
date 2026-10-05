@@ -17,6 +17,9 @@
 #include "game/game.hpp"
 #include "creatures/monsters/monster.hpp"
 #include "creatures/players/player.hpp"
+#include "creatures/players/nostalgia.hpp"
+#include "creatures/players/vocations/vocation.hpp"
+#include "kv/kv.hpp"
 #include "lib/metrics/metrics.hpp"
 #include "enums/account_type.hpp"
 #include "enums/account_errors.hpp"
@@ -262,6 +265,11 @@ bool IOLoginData::savePlayerGuard(const std::shared_ptr<Player> &player) {
 	// Saves data components that are only valid if the player is online.
 	// Skips execution entirely if the player is offline to avoid overwriting unloaded data.
 	saveOnlyDataForOnlinePlayer(player);
+	// The Nostalgia namespace is loaded on demand for online and offline characters.
+	// Persist it in the same transaction as native experience, inventory and equipment.
+	if (nostalgia::isClass(player->getVocation()->getId()) && !g_kv().savePrefix(fmt::format("player.{}.nostalgia-v1.", player->getGUID()))) {
+		throw DatabaseException("Failed to save Nostalgia progression: " + player->getName());
+	}
 
 	return true;
 }

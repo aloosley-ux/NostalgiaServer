@@ -5,6 +5,7 @@ end
 local playerLoginGlobal = CreatureEvent("PlayerLoginGlobal")
 
 function playerLoginGlobal.onLogin(player)
+	if Nostalgia and Nostalgia.class(player) then return Nostalgia.login(player) end
 	-- Welcome
 	local loginStr
 	if player:getLastLoginSaved() == 0 then

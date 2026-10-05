@@ -8,6 +8,7 @@
  */
 
 #include "creatures/players/player.hpp"
+#include "creatures/players/nostalgia.hpp"
 
 #include "account/account.hpp"
 #include "config/configmanager.hpp"
@@ -748,6 +749,9 @@ void Player::getShieldAndWeapon(std::shared_ptr<Item> &shield, std::shared_ptr<I
 }
 
 float Player::getMitigation() const {
+	if (nostalgia::isClass(vocation->getId())) {
+		return 0.0f;
+	}
 	return wheel().calculateMitigation();
 }
 
@@ -1188,6 +1192,10 @@ void Player::updateLastAggressiveAction() {
 }
 
 void Player::addSkillAdvance(skills_t skill, uint64_t count) {
+	// Nostalgia skills accrue independent canonical XP in character KV.
+	if (nostalgia::isClass(vocation->getId())) {
+		return;
+	}
 	uint64_t currReqTries = vocation->getReqSkillTries(skill, skills[skill].level);
 	uint64_t nextReqTries = vocation->getReqSkillTries(skill, skills[skill].level + 1);
 	if (currReqTries >= nextReqTries) {
@@ -3246,6 +3254,7 @@ void Player::setXpBoostPercent(uint16_t percent) {
 }
 
 uint16_t Player::getStaminaXpBoost() const {
+	if (nostalgia::isClass(vocation->getId())) return 100;
 	return staminaXpBoost;
 }
 
@@ -3689,7 +3698,7 @@ void Player::addExperience(const std::shared_ptr<Creature> &target, uint64_t exp
 	while (experience >= nextLevelExp) {
 		++level;
 		// Player stats gain for vocations level <= 8
-		if (vocation->getId() != VOCATION_NONE && level <= 8) {
+		if (!nostalgia::isClass(vocation->getId()) && vocation->getId() != VOCATION_NONE && level <= 8) {
 			const auto &noneVocation = g_vocations().getVocation(VOCATION_NONE);
 			healthMax += noneVocation->getHPGain();
 			health += noneVocation->getHPGain();
@@ -3902,6 +3911,10 @@ bool Player::isPzLocked() const {
 }
 
 BlockType_t Player::blockHit(const std::shared_ptr<Creature> &attacker, const CombatType_t &combatType, int32_t &damage, bool checkDefense, bool checkArmor, bool field) {
+	if (nostalgia::isClass(vocation->getId())) {
+		// Mitigation is applied once by Nostalgia's health-change event.
+		return Creature::blockHit(attacker, combatType, damage, false, false, field);
+	}
 	BlockType_t blockType = Creature::blockHit(attacker, combatType, damage, checkDefense, checkArmor, field);
 	if (attacker) {
 		sendCreatureSquare(attacker, SQ_COLOR_BLACK);
@@ -3986,6 +3999,12 @@ void Player::doAttacking(uint32_t interval) {
 	const auto &attackedCreature = getAttackedCreature();
 	if (!attackedCreature) {
 		return;
+	}
+	if (nostalgia::isClass(vocation->getId())) {
+		const auto &tool = getWeapon(true);
+		if (!tool || nostalgia::attackMs(tool->getID()) == 0) {
+			return;
+		}
 	}
 
 	if ((OTSYS_TIME() - lastAttack) >= getAttackSpeed()) {
@@ -4251,7 +4270,7 @@ void Player::death(const std::shared_ptr<Creature> &lastHitCreature) {
 		}
 		despawn();
 	} else {
-		setSkillLoss(true);
+		setSkillLoss(!nostalgia::isClass(vocation->getId()));
 
 		auto it = conditions.begin(), end = conditions.end();
 		while (it != end) {
@@ -4535,7 +4554,7 @@ void Player::removePlayer(bool displayEffect, bool forced /*= true*/) {
 }
 
 uint64_t Player::getExpForLevel(const uint32_t level) {
-	return (((level - 6ULL) * level + 17ULL) * level - 12ULL) / 6ULL * 100ULL;
+	return nostalgia::experienceForLevel(level);
 }
 
 uint16_t Player::getStaminaMinutes() const {
@@ -6699,7 +6718,7 @@ bool Player::onKilledMonster(const std::shared_ptr<Monster> &monster) {
 }
 
 void Player::gainExperience(uint64_t gainExp, const std::shared_ptr<Creature> &target) {
-	if (hasFlag(PlayerFlags_t::NotGainExperience) || gainExp == 0 || staminaMinutes == 0) {
+	if (hasFlag(PlayerFlags_t::NotGainExperience) || gainExp == 0 || (staminaMinutes == 0 && !nostalgia::isClass(vocation->getId()))) {
 		return;
 	}
 
@@ -7344,6 +7363,10 @@ bool Player::isPromoted() const {
 }
 
 uint32_t Player::getAttackSpeed() const {
+	if (nostalgia::isClass(vocation->getId())) {
+		const auto &tool = getWeapon(true);
+		return tool && nostalgia::attackMs(tool->getID()) ? nostalgia::attackMs(tool->getID()) : 1000;
+	}
 	return vocation->getAttackSpeed();
 }
 

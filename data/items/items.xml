@@ -6773,25 +6773,27 @@
 			<attribute key="slot" value="necklace"/>
 		</attribute>
 	</item>
-	<item id="3026" article="a" name="white pearl">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="weight" value="20"/>
+	<item id="3026" article="a" name="Corded ID Tag">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia NEC-01" />
+		<attribute key="slotType" value="necklace" />
+		<attribute key="armor" value="0" />
 	</item>
-	<item id="3027" article="a" name="black pearl" plural="black pearls">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="weight" value="20"/>
+	<item id="3027" article="a" name="Standard Smart Flechette Cassette">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia SUP-N-007" />
 	</item>
-	<item id="3028" article="a" name="small diamond">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="weight" value="10"/>
+	<item id="3028" article="a" name="Standard Repeater Ammunition Box">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia SUP-N-008" />
 	</item>
-	<item id="3029" article="a" name="small sapphire">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="weight" value="10"/>
+	<item id="3029" article="a" name="Standard Shot Shell Box">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia SUP-N-009" />
 	</item>
-	<item id="3030" article="a" name="small ruby">
-		<attribute key="primarytype" value="valuables"/>
-		<attribute key="weight" value="10"/>
+	<item id="3030" article="a" name="Standard Ordnance Charge Crate">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia SUP-N-010" />
 	</item>
 	<item id="3031" article="a" name="gold coin">
 		<attribute key="primarytype" value="valuables"/>
@@ -6912,16 +6914,11 @@
 			<attribute key="slot" value="ring"/>
 		</attribute>
 	</item>
-	<item id="3051" article="an" name="energy ring">
-		<attribute key="primarytype" value="rings"/>
-		<attribute key="stopduration" value="1"/>
-		<attribute key="showduration" value="1"/>
-		<attribute key="transformequipto" value="3088"/>
-		<attribute key="weight" value="80"/>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="ring"/>
-			<attribute key="vocation" value="Knight;true, Paladin;true, Elite Knight, Royal Paladin"/>
-		</attribute>
+	<item id="3051" article="a" name="Iron Band">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia RING-01" />
+		<attribute key="slotType" value="ring" />
+		<attribute key="armor" value="0" />
 	</item>
 	<item id="3052" article="a" name="life ring">
 		<attribute key="primarytype" value="rings"/>
@@ -7434,52 +7431,29 @@
 			<attribute key="slot" value="ring"/>
 		</attribute>
 	</item>
-	<item id="3097" article="a" name="dwarven ring">
-		<attribute key="primarytype" value="rings"/>
-		<attribute key="stopduration" value="1"/>
-		<attribute key="showduration" value="1"/>
-		<attribute key="transformequipto" value="3099"/>
-		<attribute key="weight" value="110"/>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="ring"/>
-		</attribute>
+	<item id="3097" article="a" name="Guard Harness">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia RIG-BAS-01" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="armor" value="0" />
 	</item>
-	<item id="3098" article="a" name="ring of healing">
-		<attribute key="stopduration" value="1"/>
-		<attribute key="showduration" value="1"/>
-		<attribute key="transformequipto" value="3100"/>
-		<attribute key="weight" value="80"/>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="ring"/>
-		</attribute>
+	<item id="3098" article="a" name="Trauma Harness">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia RIG-MED-01" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="armor" value="0" />
 	</item>
-	<item id="3099" article="a" name="dwarven ring">
-		<attribute key="primarytype" value="rings"/>
-		<attribute key="suppressdrunk" value="1"/>
-		<attribute key="showduration" value="1"/>
-		<attribute key="showAttributes" value="1"/>
-		<attribute key="duration" value="3600"/>
-		<attribute key="transformdeequipto" value="3097"/>
-		<attribute key="decayTo" value="0"/>
-		<attribute key="weight" value="110"/>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="ring"/>
-		</attribute>
+	<item id="3099" article="a" name="Recon Harness">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia RIG-RAN-01" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="armor" value="0" />
 	</item>
-	<item id="3100" article="a" name="ring of healing">
-		<attribute key="showduration" value="1"/>
-		<attribute key="showAttributes" value="1"/>
-		<attribute key="manaticks" value="6000"/>
-		<attribute key="managain" value="24"/>
-		<attribute key="healthticks" value="6000"/>
-		<attribute key="healthgain" value="6"/>
-		<attribute key="duration" value="450"/>
-		<attribute key="transformdeequipto" value="3098"/>
-		<attribute key="decayTo" value="0"/>
-		<attribute key="weight" value="80"/>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="ring"/>
-		</attribute>
+	<item id="3100" article="a" name="Combat Harness">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia RIG-ASS-01" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="armor" value="0" />
 	</item>
 	<item id="3101" article="a" name="spellbook">
 		<attribute key="primarytype" value="spellbooks"/>
@@ -8239,117 +8213,77 @@
 		<attribute key="description" value="It is the djinn leader's sleeping lamp."/>
 		<attribute key="weight" value="1300"/>
 	</item>
-	<item id="3264" article="a" name="sword">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="14"/>
-		<attribute key="extradef" value="1"/>
-		<attribute key="defense" value="12"/>
-		<attribute key="weight" value="3500"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="elemental damage" value="3"/>
-			<attribute key="life leech" value="3"/>
-			<attribute key="mana leech" value="3"/>
-			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost sword" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3264" article="a" name="Settler Rifle">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-RNG-MRK-01" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3265" article="a" name="two handed sword">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="slotType" value="two-handed"/>
-		<attribute key="attack" value="30"/>
-		<attribute key="defense" value="25"/>
-		<attribute key="weight" value="7000"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="20"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="vocation" value="Knight;true, Elite Knight"/>
-		</attribute>
+	<item id="3265" article="a" name="Hunting Rifle">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-RNG-MRK-02" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3266" article="a" name="battle axe">
-		<attribute key="primarytype" value="axe weapons"/>
-		<attribute key="weaponType" value="axe"/>
-		<attribute key="slotType" value="two-handed"/>
-		<attribute key="attack" value="25"/>
-		<attribute key="defense" value="10"/>
-		<attribute key="weight" value="5000"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="axe"/>
-			<attribute key="vocation" value="Knight;true, Elite Knight"/>
-		</attribute>
+	<item id="3266" article="a" name="Field Bow">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-RNG-BLT-01" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3267" article="a" name="dagger">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="defense" value="6"/>
-		<attribute key="weight" value="950"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3267" article="a" name="Tracking Dart Gun">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-RNG-HNT-01" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3268" article="a" name="hand axe">
-		<attribute key="primarytype" value="axe weapons"/>
-		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="10"/>
-		<attribute key="defense" value="5"/>
-		<attribute key="weight" value="1800"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="axe"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3268" article="a" name="Tagger Carbine">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-RNG-HNT-02" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3269" article="a" name="halberd">
-		<attribute key="primarytype" value="axe weapons"/>
-		<attribute key="weaponType" value="axe"/>
-		<attribute key="slotType" value="two-handed"/>
-		<attribute key="attack" value="35"/>
-		<attribute key="defense" value="14"/>
-		<attribute key="weight" value="9000"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="25"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="axe"/>
-		</attribute>
+	<item id="3269" article="a" name="Sensor Flechette">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-RNG-HNT-03" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3270" article="a" name="club">
-		<attribute key="primarytype" value="club weapons"/>
-		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="7"/>
-		<attribute key="defense" value="7"/>
-		<attribute key="weight" value="2500"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="club"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3270" article="a" name="Forge Hammer">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-BAS-IMP-02" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="1" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3271" article="a" name="spike sword">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="description" value="It can be enchanted with an element."/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="24"/>
-		<attribute key="extradef" value="2"/>
-		<attribute key="defense" value="21"/>
-		<attribute key="weight" value="5000"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="elemental damage" value="3"/>
-			<attribute key="life leech" value="3"/>
-			<attribute key="mana leech" value="3"/>
-			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost sword" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3271" article="a" name="Scout Rifle">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-RNG-MRK-03" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
 	<item id="3272" article="a" name="rapier">
 		<attribute key="primarytype" value="sword weapons"/>
@@ -8375,30 +8309,23 @@
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="3274" article="an" name="axe">
-		<attribute key="primarytype" value="axe weapons"/>
-		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="12"/>
-		<attribute key="defense" value="6"/>
-		<attribute key="weight" value="4000"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="axe"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3274" article="a" name="Recurve Bow">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-RNG-BLT-02" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3275" article="a" name="double axe">
-		<attribute key="primarytype" value="axe weapons"/>
-		<attribute key="weaponType" value="axe"/>
-		<attribute key="slotType" value="two-handed"/>
-		<attribute key="attack" value="35"/>
-		<attribute key="defense" value="12"/>
-		<attribute key="weight" value="7000"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="25"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="axe"/>
-			<attribute key="vocation" value="Knight;true, Elite Knight"/>
-		</attribute>
+	<item id="3275" article="a" name="Crank Crossbow">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-RNG-BLT-03" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
 	<item id="3276" article="a" name="hatchet">
 		<attribute key="primarytype" value="axe weapons"/>
@@ -8440,87 +8367,50 @@
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
-	<item id="3279" article="a" name="war hammer">
-		<attribute key="primarytype" value="club weapons"/>
-		<attribute key="weaponType" value="club"/>
-		<attribute key="slotType" value="two-handed"/>
-		<attribute key="attack" value="45"/>
-		<attribute key="defense" value="10"/>
-		<attribute key="weight" value="8500"/>
-		<attribute key="imbuementslot" value="3">
-			<attribute key="elemental damage" value="3"/>
-			<attribute key="life leech" value="3"/>
-			<attribute key="mana leech" value="3"/>
-			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost club" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="50"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="club"/>
-			<attribute key="vocation" value="Knight;true, Elite Knight"/>
-		</attribute>
+	<item id="3279" article="a" name="Ballast Maul">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-BAS-IMP-03" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="1" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3280" article="a" name="fire sword">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="description" value="The blade is a magic flame"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="elementfire" value="11"/>
-		<attribute key="attack" value="24"/>
-		<attribute key="extradef" value="1"/>
-		<attribute key="defense" value="20"/>
-		<attribute key="weight" value="2300"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="30"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3280" article="a" name="Militia Carbine">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-AST-REP-01" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3281" article="a" name="giant sword">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="description" value="This sword has been forged by ancient giants"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="slotType" value="two-handed"/>
-		<attribute key="attack" value="46"/>
-		<attribute key="defense" value="22"/>
-		<attribute key="weight" value="18000"/>
-		<attribute key="imbuementslot" value="3">
-			<attribute key="elemental damage" value="3"/>
-			<attribute key="life leech" value="3"/>
-			<attribute key="mana leech" value="3"/>
-			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost sword" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="55"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="vocation" value="Knight;true, Elite Knight"/>
-		</attribute>
+	<item id="3281" article="a" name="Service Rifle">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-AST-REP-02" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3282" article="a" name="morning star">
-		<attribute key="primarytype" value="club weapons"/>
-		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="25"/>
-		<attribute key="defense" value="11"/>
-		<attribute key="weight" value="5400"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="club"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3282" article="a" name="Hand Sprayer">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-MED-CHE-01" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3283" article="a" name="carlin sword">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="15"/>
-		<attribute key="extradef" value="1"/>
-		<attribute key="defense" value="13"/>
-		<attribute key="weight" value="4000"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3283" article="a" name="Repeater Rifle">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-AST-REP-03" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
 	<item id="3284" article="an" name="ice rapier">
 		<attribute key="primarytype" value="sword weapons"/>
@@ -8595,49 +8485,41 @@
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="3289" article="a" name="staff">
-		<attribute key="primarytype" value="club weapons"/>
-		<attribute key="weaponType" value="club"/>
-		<attribute key="slotType" value="two-handed"/>
-		<attribute key="attack" value="10"/>
-		<attribute key="defense" value="25"/>
-		<attribute key="weight" value="3800"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="club"/>
-		</attribute>
+	<item id="3289" article="a" name="Dart Pistol">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-MED-INJ-01" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3290" article="a" name="silver dagger">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="9"/>
-		<attribute key="defense" value="7"/>
-		<attribute key="weight" value="1020"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3290" article="a" name="Clinic Sidearm">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-MED-SUR-01" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3291" article="a" name="knife">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="5"/>
-		<attribute key="defense" value="5"/>
-		<attribute key="weight" value="420"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3291" article="a" name="Field Pistol">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-MED-SUR-02" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3292" article="a" name="combat knife">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="defense" value="6"/>
-		<attribute key="weight" value="870"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3292" article="a" name="Precision Sidearm">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-MED-SUR-03" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
 	<item id="3293" article="a" name="sickle">
 		<attribute key="primarytype" value="axe weapons"/>
@@ -8650,66 +8532,41 @@
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="3294" article="a" name="short sword">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="11"/>
-		<attribute key="defense" value="11"/>
-		<attribute key="weight" value="3500"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3294" article="a" name="Salvage Machete">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-BAS-EDG-01" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="1" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3295" article="a" name="bright sword">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="description" value="The blade shimmers in light blue"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="36"/>
-		<attribute key="extradef" value="1"/>
-		<attribute key="defense" value="30"/>
-		<attribute key="weight" value="2900"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="elemental damage" value="3"/>
-			<attribute key="life leech" value="3"/>
-			<attribute key="mana leech" value="3"/>
-			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost sword" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="30"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3295" article="a" name="Coach Gun">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-AST-BRE-01" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3296" article="a" name="warlord sword">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="description" value="Strong powers flow in this magic sword"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="slotType" value="two-handed"/>
-		<attribute key="attack" value="53"/>
-		<attribute key="defense" value="38"/>
-		<attribute key="weight" value="6400"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="120"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="vocation" value="Knight;true, Elite Knight"/>
-		</attribute>
+	<item id="3296" article="a" name="Pump Scattergun">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-AST-BRE-02" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3297" article="a" name="serpent sword">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="elementearth" value="8"/>
-		<attribute key="attack" value="18"/>
-		<attribute key="extradef" value="1"/>
-		<attribute key="defense" value="15"/>
-		<attribute key="weight" value="4100"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3297" article="a" name="Combat Shotgun">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-AST-BRE-03" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
 	<item id="3298" article="a" name="throwing knife" plural="throwing knives">
 		<attribute key="primarytype" value="distance weapons"/>
@@ -8737,57 +8594,32 @@
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="3300" article="a" name="katana">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="16"/>
-		<attribute key="extradef" value="1"/>
-		<attribute key="defense" value="12"/>
-		<attribute key="weight" value="3100"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3300" article="a" name="Pipe Launcher">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-AST-ORD-01" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3301" article="a" name="broadsword">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="slotType" value="two-handed"/>
-		<attribute key="attack" value="26"/>
-		<attribute key="defense" value="23"/>
-		<attribute key="weight" value="5250"/>
-		<attribute key="imbuementslot" value="3">
-			<attribute key="elemental damage" value="3"/>
-			<attribute key="life leech" value="3"/>
-			<attribute key="mana leech" value="3"/>
-			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost sword" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="vocation" value="Knight;true, Elite Knight"/>
-		</attribute>
+	<item id="3301" article="a" name="Single-Shot Grenadier">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-AST-ORD-02" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3302" article="a" name="dragon lance">
-		<attribute key="primarytype" value="axe weapons"/>
-		<attribute key="description" value="The extraordinary sharp blade penetrates every armor"/>
-		<attribute key="weaponType" value="axe"/>
-		<attribute key="slotType" value="two-handed"/>
-		<attribute key="attack" value="47"/>
-		<attribute key="defense" value="16"/>
-		<attribute key="weight" value="6700"/>
-		<attribute key="imbuementslot" value="3">
-			<attribute key="elemental damage" value="3"/>
-			<attribute key="life leech" value="3"/>
-			<attribute key="mana leech" value="3"/>
-			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost axe" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="60"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="axe"/>
-		</attribute>
+	<item id="3302" article="a" name="Drum Grenade Launcher">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-AST-ORD-03" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
 	<item id="3303" article="a" name="great axe">
 		<attribute key="primarytype" value="axe weapons"/>
@@ -8811,17 +8643,14 @@
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
-	<item id="3304" article="a" name="crowbar">
-		<attribute key="primarytype" value="tools"/>
-		<attribute key="description" value="It may come in handy sometime"/>
-		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="5"/>
-		<attribute key="defense" value="6"/>
-		<attribute key="weight" value="2100"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="club"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3304" article="a" name="Pipe Maul">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-BAS-IMP-01" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="1" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
 	<item id="3305" article="a" name="battle hammer">
 		<attribute key="primarytype" value="club weapons"/>
@@ -8845,28 +8674,23 @@
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="3307" article="a" name="scimitar">
-		<attribute key="primarytype" value="sword weapons"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="19"/>
-		<attribute key="extradef" value="1"/>
-		<attribute key="defense" value="13"/>
-		<attribute key="weight" value="2900"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3307" article="a" name="Brush Cleaver">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-BAS-EDG-02" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="1" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3308" article="a" name="machete">
-		<attribute key="primarytype" value="tools"/>
-		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="12"/>
-		<attribute key="defense" value="9"/>
-		<attribute key="weight" value="1650"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="sword"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3308" article="a" name="Forged Edge">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-BAS-EDG-03" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="1" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
 	<item id="3309" article="a" name="thunder hammer">
 		<attribute key="primarytype" value="club weapons"/>
@@ -8901,48 +8725,23 @@
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="3311" article="a" name="clerical mace">
-		<attribute key="primarytype" value="club weapons"/>
-		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="28"/>
-		<attribute key="extradef" value="1"/>
-		<attribute key="defense" value="15"/>
-		<attribute key="weight" value="5800"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="elemental damage" value="3"/>
-			<attribute key="life leech" value="3"/>
-			<attribute key="mana leech" value="3"/>
-			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost club" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="20"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="club"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3311" article="a" name="Field Atomiser">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-MED-CHE-02" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3312" article="a" name="silver mace">
-		<attribute key="primarytype" value="club weapons"/>
-		<attribute key="description" value="You feel an aura of protection"/>
-		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="41"/>
-		<attribute key="extradef" value="2"/>
-		<attribute key="defense" value="30"/>
-		<attribute key="weight" value="6700"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="elemental damage" value="3"/>
-			<attribute key="life leech" value="3"/>
-			<attribute key="mana leech" value="3"/>
-			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost club" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="45"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="club"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3312" article="a" name="Gel Projector">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-MED-CHE-03" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
 	<item id="3313" article="an" name="obsidian lance">
 		<attribute key="primarytype" value="axe weapons"/>
@@ -9022,26 +8821,14 @@
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="3318" article="a" name="knight axe">
-		<attribute key="primarytype" value="axe weapons"/>
-		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="33"/>
-		<attribute key="extradef" value="1"/>
-		<attribute key="defense" value="21"/>
-		<attribute key="weight" value="5900"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="elemental damage" value="3"/>
-			<attribute key="life leech" value="3"/>
-			<attribute key="mana leech" value="3"/>
-			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost axe" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="25"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="axe"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3318" article="a" name="Hand Breach Saw">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-BAS-BRE-01" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="1" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
 	<item id="3319" article="a" name="stonecutter axe">
 		<attribute key="primarytype" value="axe weapons"/>
@@ -9108,59 +8895,32 @@
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="3323" article="a" name="dwarven axe">
-		<attribute key="primarytype" value="axe weapons"/>
-		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="31"/>
-		<attribute key="extradef" value="2"/>
-		<attribute key="defense" value="19"/>
-		<attribute key="weight" value="8200"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="elemental damage" value="3"/>
-			<attribute key="life leech" value="3"/>
-			<attribute key="mana leech" value="3"/>
-			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost axe" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="20"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="axe"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3323" article="a" name="Rotary Cutter">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-BAS-BRE-02" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="1" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3324" article="a" name="skull staff">
-		<attribute key="primarytype" value="club weapons"/>
-		<attribute key="description" value="The staff longs for death"/>
-		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="36"/>
-		<attribute key="extradef" value="1"/>
-		<attribute key="defense" value="12"/>
-		<attribute key="weight" value="1700"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="elemental damage" value="3"/>
-			<attribute key="life leech" value="3"/>
-			<attribute key="mana leech" value="3"/>
-			<attribute key="critical hit" value="3"/>
-			<attribute key="skillboost club" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="level" value="30"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="club"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3324" article="a" name="Pneumatic Injector">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-MED-INJ-02" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
-	<item id="3325" article="a" name="light mace">
-		<attribute key="primarytype" value="club weapons"/>
-		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="14"/>
-		<attribute key="defense" value="9"/>
-		<attribute key="weight" value="4100"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="club"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3325" article="a" name="Needler">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-MED-INJ-03" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="7" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
 	<item id="3326" article="an" name="epee">
 		<attribute key="primarytype" value="sword weapons"/>
@@ -9182,16 +8942,14 @@
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="3327" article="a" name="daramian mace">
-		<attribute key="primarytype" value="club weapons"/>
-		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="21"/>
-		<attribute key="defense" value="12"/>
-		<attribute key="weight" value="6800"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="weaponType" value="club"/>
-			<attribute key="slot" value="hand"/>
-		</attribute>
+	<item id="3327" article="a" name="Motor Saw">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia W-BAS-BRE-03" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="range" value="1" />
+		<attribute key="attack" value="0" />
+		<attribute key="defense" value="0" />
 	</item>
 	<item id="3328" article="a" name="daramian waraxe">
 		<attribute key="primarytype" value="axe weapons"/>
@@ -9585,13 +9343,11 @@
 			<attribute key="slot" value="head"/>
 		</attribute>
 	</item>
-	<item id="3354" article="a" name="brass helmet">
-		<attribute key="primarytype" value="helmets"/>
-		<attribute key="armor" value="3"/>
-		<attribute key="weight" value="2700"/>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="head"/>
-		</attribute>
+	<item id="3354" article="a" name="Settler Canvas Headgear">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia ARM-01-H" />
+		<attribute key="slotType" value="head" />
+		<attribute key="armor" value="0" />
 	</item>
 	<item id="3355" article="a" name="leather helmet">
 		<attribute key="primarytype" value="helmets"/>
@@ -9761,40 +9517,23 @@
 			<attribute key="slot" value="head"/>
 		</attribute>
 	</item>
-	<item id="3370" article="a" name="knight armor">
-		<attribute key="primarytype" value="armors"/>
-		<attribute key="armor" value="12"/>
-		<attribute key="weight" value="12000"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="life leech" value="3"/>
-			<attribute key="elemental protection death" value="3"/>
-			<attribute key="elemental protection earth" value="3"/>
-			<attribute key="elemental protection fire" value="3"/>
-			<attribute key="elemental protection ice" value="3"/>
-			<attribute key="elemental protection energy" value="3"/>
-			<attribute key="elemental protection holy" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Knight;true, Paladin;true, Elite Knight, Royal Paladin"/>
-		</attribute>
+	<item id="3370" article="a" name="Salvager Plate Chest">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia ARM-03-C" />
+		<attribute key="slotType" value="body" />
+		<attribute key="armor" value="0" />
 	</item>
-	<item id="3371" name="knight legs">
-		<attribute key="primarytype" value="legs"/>
-		<attribute key="armor" value="8"/>
-		<attribute key="weight" value="7000"/>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="legs"/>
-			<attribute key="vocation" value="Knight;true, Paladin;true, Elite Knight, Royal Paladin"/>
-		</attribute>
+	<item id="3371" article="a" name="Salvager Plate Legguards">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia ARM-03-L" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="armor" value="0" />
 	</item>
-	<item id="3372" name="brass legs">
-		<attribute key="primarytype" value="legs"/>
-		<attribute key="armor" value="5"/>
-		<attribute key="weight" value="3800"/>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="legs"/>
-		</attribute>
+	<item id="3372" article="a" name="Trailguard Legguards">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia ARM-02-L" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="armor" value="0" />
 	</item>
 	<item id="3373" article="a" name="strange helmet">
 		<attribute key="primarytype" value="helmets"/>
@@ -9836,13 +9575,11 @@
 			<attribute key="slot" value="armor"/>
 		</attribute>
 	</item>
-	<item id="3378" article="a" name="studded armor">
-		<attribute key="primarytype" value="armors"/>
-		<attribute key="armor" value="5"/>
-		<attribute key="weight" value="7100"/>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="armor"/>
-		</attribute>
+	<item id="3378" article="a" name="Trailguard Headgear">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia ARM-02-H" />
+		<attribute key="slotType" value="head" />
+		<attribute key="armor" value="0" />
 	</item>
 	<item id="3379" article="a" name="doublet">
 		<attribute key="primarytype" value="armors"/>
@@ -9852,22 +9589,11 @@
 			<attribute key="slot" value="armor"/>
 		</attribute>
 	</item>
-	<item id="3380" article="a" name="noble armor">
-		<attribute key="primarytype" value="armors"/>
-		<attribute key="armor" value="11"/>
-		<attribute key="weight" value="12000"/>
-		<attribute key="imbuementslot" value="2">
-			<attribute key="life leech" value="3"/>
-			<attribute key="elemental protection death" value="3"/>
-			<attribute key="elemental protection earth" value="3"/>
-			<attribute key="elemental protection fire" value="3"/>
-			<attribute key="elemental protection ice" value="3"/>
-			<attribute key="elemental protection energy" value="3"/>
-			<attribute key="elemental protection holy" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="armor"/>
-		</attribute>
+	<item id="3380" article="a" name="Salvager Plate Headgear">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia ARM-03-H" />
+		<attribute key="slotType" value="head" />
+		<attribute key="armor" value="0" />
 	</item>
 	<item id="3381" article="a" name="crown armor">
 		<attribute key="primarytype" value="armors"/>
@@ -10726,67 +10452,25 @@
 			<attribute key="slot" value="shield"/>
 		</attribute>
 	</item>
-	<item id="3446" article="a" name="bolt">
-		<attribute key="primarytype" value="ammunition"/>
-		<attribute key="weaponType" value="ammunition"/>
-		<attribute key="ammotype" value="bolt"/>
-		<attribute key="shootType" value="bolt"/>
-		<attribute key="maxhitchance" value="87"/>
-		<attribute key="attack" value="30"/>
-		<attribute key="weight" value="80"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="action" value="removecount"/>
-			<attribute key="weaponType" value="ammo"/>
-			<attribute key="slot" value="ammo"/>
-		</attribute>
+	<item id="3446" article="a" name="Standard Injector Dart Pack">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia SUP-N-003" />
 	</item>
-	<item id="3447" article="an" name="arrow">
-		<attribute key="primarytype" value="ammunition"/>
-		<attribute key="weaponType" value="ammunition"/>
-		<attribute key="ammotype" value="arrow"/>
-		<attribute key="shootType" value="arrow"/>
-		<attribute key="maxhitchance" value="91"/>
-		<attribute key="attack" value="25"/>
-		<attribute key="weight" value="70"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="action" value="removecount"/>
-			<attribute key="weaponType" value="ammo"/>
-			<attribute key="slot" value="ammo"/>
-		</attribute>
+	<item id="3447" article="a" name="Standard Compact Cartridge Box">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia SUP-N-002" />
 	</item>
-	<item id="3448" article="a" name="poison arrow">
-		<attribute key="primarytype" value="ammunition"/>
-		<attribute key="weaponType" value="ammunition"/>
-		<attribute key="ammotype" value="arrow"/>
-		<attribute key="shootType" value="poisonarrow"/>
-		<attribute key="maxhitchance" value="91"/>
-		<attribute key="attack" value="23"/>
-		<attribute key="weight" value="80"/>
+	<item id="3448" article="a" name="Standard Reagent Canister Crate">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia SUP-N-004" />
 	</item>
-	<item id="3449" article="a" name="burst arrow">
-		<attribute key="primarytype" value="ammunition"/>
-		<attribute key="weaponType" value="ammunition"/>
-		<attribute key="ammotype" value="arrow"/>
-		<attribute key="shootType" value="burstarrow"/>
-		<attribute key="maxhitchance" value="100"/>
-		<attribute key="attack" value="27"/>
-		<attribute key="weight" value="90"/>
+	<item id="3449" article="a" name="Standard Rifle Cartridge Box">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia SUP-N-005" />
 	</item>
-	<item id="3450" article="a" name="power bolt">
-		<attribute key="primarytype" value="ammunition"/>
-		<attribute key="weaponType" value="ammunition"/>
-		<attribute key="ammotype" value="bolt"/>
-		<attribute key="shootType" value="powerbolt"/>
-		<attribute key="maxhitchance" value="91"/>
-		<attribute key="attack" value="40"/>
-		<attribute key="weight" value="90"/>
-		<attribute key="script" value="moveevent;weapon">
-			<attribute key="action" value="removecount"/>
-			<attribute key="level" value="55"/>
-			<attribute key="unproperly" value="true"/>
-			<attribute key="weaponType" value="ammo"/>
-			<attribute key="slot" value="ammo"/>
-		</attribute>
+	<item id="3450" article="a" name="Standard Bolt Bundle">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia SUP-N-006" />
 	</item>
 	<item id="3451" article="a" name="pitchfork">
 		<attribute key="primarytype" value="tools"/>
@@ -10936,9 +10620,9 @@
 	<item id="3491" article="a" name="ship's telescope">
 		<attribute key="rotateto" value="3489"/>
 	</item>
-	<item id="3492" article="a" name="worm">
-		<attribute key="primarytype" value="creature products"/>
-		<attribute key="weight" value="5"/>
+	<item id="3492" article="a" name="Standard Drive Cell Pack">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia SUP-N-001" />
 	</item>
 	<item fromid="3493" toid="3496" article="a" name="crane">
 		<attribute key="primarytype" value="machines (objects)"/>
@@ -11086,28 +10770,17 @@
 			<attribute key="slot" value="feet"/>
 		</attribute>
 	</item>
-	<item id="3551" name="sandals">
-		<attribute key="primarytype" value="boots"/>
-		<attribute key="weight" value="600"/>
-		<attribute key="imbuementslot" value="1">
-			<attribute key="paralysis deflection" value="3"/>
-			<attribute key="increase speed" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="feet"/>
-		</attribute>
+	<item id="3551" article="a" name="Trailguard Boots">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia ARM-02-B" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="armor" value="0" />
 	</item>
-	<item id="3552" name="leather boots">
-		<attribute key="primarytype" value="boots"/>
-		<attribute key="armor" value="1"/>
-		<attribute key="weight" value="900"/>
-		<attribute key="imbuementslot" value="1">
-			<attribute key="paralysis deflection" value="3"/>
-			<attribute key="increase speed" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="feet"/>
-		</attribute>
+	<item id="3552" article="a" name="Settler Canvas Boots">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia ARM-01-B" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="armor" value="0" />
 	</item>
 	<item id="3553" name="bunnyslippers">
 		<attribute key="primarytype" value="boots"/>
@@ -11120,17 +10793,11 @@
 			<attribute key="slot" value="feet"/>
 		</attribute>
 	</item>
-	<item id="3554" name="steel boots">
-		<attribute key="primarytype" value="boots"/>
-		<attribute key="armor" value="3"/>
-		<attribute key="weight" value="2900"/>
-		<attribute key="imbuementslot" value="1">
-			<attribute key="paralysis deflection" value="3"/>
-			<attribute key="increase speed" value="3"/>
-		</attribute>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="feet"/>
-		</attribute>
+	<item id="3554" article="a" name="Salvager Plate Boots">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia ARM-03-B" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="armor" value="0" />
 	</item>
 	<item id="3555" name="golden boots">
 		<attribute key="primarytype" value="boots"/>
@@ -11172,13 +10839,11 @@
 			<attribute key="slot" value="legs"/>
 		</attribute>
 	</item>
-	<item id="3559" name="leather legs">
-		<attribute key="primarytype" value="legs"/>
-		<attribute key="armor" value="1"/>
-		<attribute key="weight" value="1800"/>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="legs"/>
-		</attribute>
+	<item id="3559" article="a" name="Settler Canvas Legguards">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia ARM-01-L" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="armor" value="0" />
 	</item>
 	<item id="3560" article="a" name="bast skirt">
 		<attribute key="primarytype" value="legs"/>
@@ -11187,21 +10852,17 @@
 			<attribute key="slot" value="legs"/>
 		</attribute>
 	</item>
-	<item id="3561" article="a" name="jacket">
-		<attribute key="primarytype" value="armors"/>
-		<attribute key="armor" value="1"/>
-		<attribute key="weight" value="2400"/>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="armor"/>
-		</attribute>
+	<item id="3561" article="a" name="Settler Canvas Chest">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia ARM-01-C" />
+		<attribute key="slotType" value="body" />
+		<attribute key="armor" value="0" />
 	</item>
-	<item id="3562" article="a" name="coat">
-		<attribute key="primarytype" value="armors"/>
-		<attribute key="armor" value="1"/>
-		<attribute key="weight" value="2700"/>
-		<attribute key="script" value="moveevent">
-			<attribute key="slot" value="armor"/>
-		</attribute>
+	<item id="3562" article="a" name="Trailguard Chest">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia ARM-02-C" />
+		<attribute key="slotType" value="body" />
+		<attribute key="armor" value="0" />
 	</item>
 	<item id="3563" article="a" name="green tunic">
 		<attribute key="primarytype" value="armors"/>
@@ -11358,20 +11019,17 @@
 		<attribute key="showCount" value="0"/>
 		<attribute key="weight" value="50"/>
 	</item>
-	<item id="3582" name="ham">
-		<attribute key="primarytype" value="food"/>
-		<attribute key="showCount" value="0"/>
-		<attribute key="weight" value="2000"/>
+	<item id="3582" article="a" name="Cloth Dressing">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia MED-01" />
 	</item>
-	<item id="3583" name="dragon ham" plural="dragon ham">
-		<attribute key="primarytype" value="food"/>
-		<attribute key="description" value="It still contains a small part of the power of a dragon"/>
-		<attribute key="showCount" value="0"/>
-		<attribute key="weight" value="3000"/>
+	<item id="3583" article="a" name="Sterile Dressing">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia MED-02" />
 	</item>
-	<item id="3584" article="a" name="pear" plural="pears">
-		<attribute key="primarytype" value="food"/>
-		<attribute key="weight" value="140"/>
+	<item id="3584" article="a" name="Compression Bandage">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Nostalgia MED-03" />
 	</item>
 	<item id="3585" article="a" name="red apple" plural="red apples">
 		<attribute key="primarytype" value="food"/>

@@ -147,4 +147,8 @@
 		<gem quality="1" name="spiritualist gem" />
 		<gem quality="2" name="greater spiritualist gem" />
 	</vocation>
+<vocation id="20" clientid="1" baseid="20" name="Bastion" description="a bastion" gaincap="0" gainhp="0" gainmana="0" gainhpamount="0" gainmanaamount="0" attackspeed="1000" basespeed="110" soulmax="0" fromvoc="20"><formula meleeDamage="0" distDamage="0" defense="0" armor="0" /></vocation>
+<vocation id="21" clientid="2" baseid="21" name="Medic" description="a medic" gaincap="0" gainhp="0" gainmana="0" gainhpamount="0" gainmanaamount="0" attackspeed="1000" basespeed="110" soulmax="0" fromvoc="21"><formula meleeDamage="0" distDamage="0" defense="0" armor="0" /></vocation>
+<vocation id="22" clientid="3" baseid="22" name="Ranger" description="a ranger" gaincap="0" gainhp="0" gainmana="0" gainhpamount="0" gainmanaamount="0" attackspeed="1000" basespeed="110" soulmax="0" fromvoc="22"><formula meleeDamage="0" distDamage="0" defense="0" armor="0" /></vocation>
+<vocation id="23" clientid="4" baseid="23" name="Assault" description="a assault" gaincap="0" gainhp="0" gainmana="0" gainhpamount="0" gainmanaamount="0" attackspeed="1000" basespeed="110" soulmax="0" fromvoc="23"><formula meleeDamage="0" distDamage="0" defense="0" armor="0" /></vocation>
 </vocations>

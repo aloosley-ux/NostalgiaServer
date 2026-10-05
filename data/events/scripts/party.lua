@@ -66,6 +66,10 @@ function Party:onDisband()
 end
 
 function Party:onShareExperience(exp)
+	if Nostalgia and Nostalgia.class(self:getLeader()) then
+		-- Keep sub-integer kill shares until Nostalgia's per-character XP accumulator.
+		return exp
+	end
 	local uniqueVocationsCount = self:getUniqueVocationsCount()
 	local partySize = self:getMemberCount() + 1
 

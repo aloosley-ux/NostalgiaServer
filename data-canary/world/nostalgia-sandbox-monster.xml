@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<monsters>
+  <monster centerx="1024" centery="1008" centerz="7" radius="3">
+    <monster name="Field Hare" x="0" y="0" z="7" spawntime="30" />
+    <monster name="Field Hare" x="2" y="2" z="7" spawntime="30" />
+    <monster name="Ground Beetle" x="-2" y="1" z="7" spawntime="30" />
+  </monster>
+  <monster centerx="1027" centery="1024" centerz="7" radius="4">
+    <monster name="Ground Beetle" x="0" y="0" z="7" spawntime="30" />
+    <monster name="Burrow Grazer" x="2" y="2" z="7" spawntime="35" />
+    <monster name="Burrow Grazer" x="-2" y="3" z="7" spawntime="35" />
+  </monster>
+  <monster centerx="1039" centery="1009" centerz="7" radius="4">
+    <monster name="Red Fox" x="0" y="0" z="7" spawntime="40" />
+    <monster name="Red Fox" x="3" y="2" z="7" spawntime="40" />
+    <monster name="Feral Hog" x="-2" y="-2" z="7" spawntime="45" />
+  </monster>
+  <monster centerx="1042" centery="1032" centerz="7" radius="5">
+    <monster name="Feral Hog" x="0" y="0" z="7" spawntime="45" />
+    <monster name="Farm Dog" x="3" y="2" z="7" spawntime="45" />
+    <monster name="Farm Dog" x="-3" y="3" z="7" spawntime="45" />
+  </monster>
+  <monster centerx="1057" centery="1037" centerz="7" radius="4">
+    <monster name="Feral Hound" x="0" y="0" z="7" spawntime="50" />
+    <monster name="Fringe Thief" x="3" y="1" z="7" spawntime="60" />
+    <monster name="Fringe Thief" x="-3" y="2" z="7" spawntime="60" />
+  </monster>
+</monsters>
